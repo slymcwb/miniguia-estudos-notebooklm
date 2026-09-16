@@ -66,6 +66,8 @@ Conclusão: Apesar de ser bem poluído o chat, não tive problemas com os result
 
 Resumos estruturados do assunto:
 Fiz um infografico.
+<img width="2752" height="1536" alt="Guia_de_Produtividade_no_Terminal" src="https://github.com/user-attachments/assets/82bf35c1-31d3-4107-a25c-52e0e1c6d67d" />
+Um resumo podcast de administração dos servidores:
 
 Um glossário com os principais conceitos aprendidos;
 Um conjunto de prompts reutilizáveis que possam apoiar futuras revisões sobre o tema.
