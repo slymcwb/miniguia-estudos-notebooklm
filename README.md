@@ -67,7 +67,63 @@ Conclusão: Apesar de ser bem poluído o chat, não tive problemas com os result
 Resumos estruturados do assunto:
 Fiz um infografico.
 <img width="2752" height="1536" alt="Guia_de_Produtividade_no_Terminal" src="https://github.com/user-attachments/assets/82bf35c1-31d3-4107-a25c-52e0e1c6d67d" />
-Um resumo podcast de administração dos servidores:
-
+Um resumo em audio de administração dos servidores:
+Esta no repositório do Github
+---*---
 Um glossário com os principais conceitos aprendidos;
+### 1\. Interfaces e Ambientes
+
+* **GUI (** **Graphical User Interface** **)**: Interface gráfica do utilizador baseada em janelas, ícones e ações com o rato[1].
+* **CLI (** **Command Line Interface** **) / Terminal**: Interface em modo texto onde o utilizador digita comandos diretamente para interagir com o sistema operativo e executar programas[1].
+
+### 2\. Estrutura de Ficheiros e Navegação
+
+* **Diretório Raiz (** **/** **)**: O ponto inicial e topo de toda a hierarquia do sistema de ficheiros no Linux[6].
+* **Diretório** **HOME** **(** **\~** **)**: O diretório privado reservado para o armazenamento de ficheiros e configurações pessoais de cada utilizador[7].
+* **Caminho Absoluto vs. Relativo**: O **caminho absoluto** especifica a localização exata de um ficheiro a partir da raiz `/`[9][12], enquanto o **caminho relativo** toma como referência o diretório atual onde o utilizador se encontra[9][12].
+
+### 3\. Permissões de Acesso e Utilizadores
+
+* **Permissões de Acesso (** **rwx** **)**: Definem as ações permitidas sobre ficheiros e diretórios, divididas em leitura (`r`), escrita (`w`) e execução (`x`)[13].
+* **Matriz** **u / g / o**: As permissões são atribuídas de forma independente ao utilizador proprietário (`u`), ao grupo proprietário (`g`) e aos restantes utilizadores do sistema (`o`)[13].
+* **chmod** **/** **chown**: O comando `chmod` altera as permissões de acesso (`rwx`)[20], enquanto o `chown` altera a propriedade do utilizador ou grupo sobre o ficheiro/pasta[23].
+* **root** **/** **sudo**: O `root` é o superutilizador administrador com acesso irrestrito ao sistema[26]. O comando `sudo` permite executar tarefas administrativas específicas com privilégios elevados de forma temporária e segura[29].
+
+### 4\. Gestão de Software e Pacotes
+
+* **APT (** **Advanced Package Tool** **)**: Ferramenta de gestão de software que pesquisa, instala e atualiza programas tratando automaticamente todas as dependências a partir dos repositórios[32].
+* **DPKG**: Utilitário de baixo nível utilizado para instalar e manipular ficheiros de pacotes locais com extensão `.deb`[30].
+* **Snap**: Formato de pacotes universais e independentes de distribuição que trazem todas as bibliotecas e dependências embutidas num único pacote[38].
+
+### 5\. Redirecionamento e Fluxos de Dados
+
+* **Fluxos Padrão (** **stdin** **,** **stdout** **,** **stderr** **)**: O canal de entrada padrão de dados (normalmente o teclado - `stdin`), a saída padrão de resultados (o ecrã - `stdout`) e a saída padrão de erros (`stderr`)[41].
+* **Redirecionadores (** **\&gt;** **,** **\&gt;&gt;** **)**: Operadores que enviam a saída de um comando diretamente para um ficheiro, podendo sobrescrevê-lo (`&gt;`) ou acrescentar texto ao final (`&gt;&gt;`)[44].
+* **Pipe (** **|** **)**: Canaliza a saída de um comando para que sirva diretamente como entrada para o comando seguinte[48].
+* **/dev/null**: Ficheiro especial do sistema conhecido como o "buraco negro" do Linux, utilizado para descartar saídas de texto ou erros indesejados[52].
+
+### 6\. Processos e Monitorização
+
+* **Processo e** **PID**: Qualquer programa em execução no sistema constitui um processo, identificado por um número único chamado `PID` (*Process ID*)[55].
+* **Foreground vs. Background**: Processos em *foreground* assumem o controlo do terminal até terminarem, enquanto processos em *background* (`&amp;`) correm em segundo plano e libertam o terminal para uso[58].
+
+### 7\. Serviços de Rede de Servidores
+
+* **DHCP**: Serviço que distribui endereços IP e configurações de rede automaticamente às máquinas da rede[61].
+* **DNS**: Serviço responsável por traduzir nomes de domínio e *hostnames* para os seus respetivos endereços IP[61].
+* **OpenSSH**: Protocolo e serviço para acesso e gestão remota do terminal de forma encriptada e segura[66][67].
+* **Samba / NFS**: Serviços dedicados à partilha de ficheiros e diretórios em rede local
+---*---
 Um conjunto de prompts reutilizáveis que possam apoiar futuras revisões sobre o tema.
+Prompt para Teste Rápido (Simulador de Entrevista):
+
+"Com base nas fontes do caderno, atue como um entrevistador técnico e me faça 3 perguntas sobre comandos terminal Linux para testar se realmente entendi o assunto."
+-----
+Prompt para Comparação de Conceitos:
+
+"Explique a diferença prática entre [CONCEITO A] e [CONCEITO B], citando um exemplo de caso real onde eu usaria cada um."
+
+Prompt de Quiz para Revisão:
+
+"Gere um quiz com 4 perguntas de múltipla escolha sobre o conteúdo estudado, ocultando o gabarito para que eu possa responder antes de conferir."
+
